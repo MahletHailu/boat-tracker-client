@@ -13,7 +13,7 @@ export class BoatsAPI {
       .catch(function (error) {
         console.log(error);
       });
-  };
+  }
 
   async put(path, body) {
 
@@ -30,7 +30,7 @@ export class BoatsAPI {
       .catch(function (error) {
         console.log(error);
       });
-  };
+  }
 
   async post(path, body) {
 
@@ -47,7 +47,7 @@ export class BoatsAPI {
       .catch(function (error) {
         console.log(error);
       });
-  };
+  }
 
   async delete(path, accept) {
 
@@ -65,7 +65,7 @@ export class BoatsAPI {
       .catch(function (error) {
         console.log(error);
       });
-  };
+  }
 }
 
 export const boatsAPI = new BoatsAPI();

@@ -2,22 +2,20 @@ import React from 'react';
 import {
   AppBar,
   Toolbar,
-  CssBaseline,
   Typography,
   useTheme,
   useMediaQuery
 } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import HumburgerMenu from "./HumburgerMenu.tsx";
+import HumburgerMenu from "./HumburgerMenu";
 
 const NavigationBar = () => {
   const theme = useTheme();
   //If screen size is less than
-  const isMobile = useMediaQuery(theme.breakpoints.down("sx"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <AppBar position="static">
-      <CssBaseline />
       <Toolbar>
         <Typography 
          style={{

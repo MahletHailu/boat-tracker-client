@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import DashBoardPage from "./dashboard.tsx";
-import AdminPage from "./admin.tsx";
-import NavigationBar from "../components/NavigationBar.tsx";
+import DashBoardPage from "./dashboard";
+import AdminPage from "./admin";
+import NavigationBar from "../components/NavigationBar";
 
 const App = () => {
   return (

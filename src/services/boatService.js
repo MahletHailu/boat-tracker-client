@@ -1,5 +1,5 @@
 
-import { BoatsAPI, boatsAPI } from './boatsAPI';
+import { boatsAPI } from './boatsAPI';
 
 class BoatService {
   api;
@@ -32,7 +32,7 @@ class BoatService {
       }
       return [];
     }
-  };
+  }
 }
 
 const boatService = new BoatService(boatsAPI)

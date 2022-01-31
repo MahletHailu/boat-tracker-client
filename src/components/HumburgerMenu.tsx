@@ -16,24 +16,32 @@ const humburgerMenu = () => {
 
   return (
       <>
-        <Drawer open={menuOpen}  onClose={() => setMenuOpen(false)}>
+        <Drawer 
+        open={menuOpen}  
+        onClose={() => setMenuOpen(false)}
+        >
             <List>
                 <ListItem
                  onClick={() => setMenuOpen(!menuOpen)}>
                     <ListItemText>
-                        <Link to="/">DashBoard</Link>
+                        <Link 
+                        to="/">DashBoard
+                        </Link>
                     </ListItemText>
                 </ListItem>
                 <ListItem
                  onClick={() => setMenuOpen(!menuOpen)}>
                     <ListItemText>
-                        <Link to="/admin">Admin</Link>
+                        <Link 
+                        to="/admin">Admin
+                        </Link>
                     </ListItemText>
                 </ListItem>
             </List>
         </Drawer>
         <IconButton 
-            onClick={() => setMenuOpen(!menuOpen)}>
+            onClick={() => setMenuOpen(!menuOpen)}
+        >
             <MenuIcon />
         </IconButton>
       </>
