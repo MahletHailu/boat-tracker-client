@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/75242586-b24f-401a-866c-4009383e49ad/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/FishFryToursBoatTracker",
+    "appService.deploySubpath": "."
+}
