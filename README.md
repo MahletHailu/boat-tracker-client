@@ -10,7 +10,7 @@ A React JS app that is used to track or manage boats states.
 
 An alternative to the slider would be, radio buttons or may be just drop down buttons. 
 
-2.Admin: This where operators can add/delete new boats. I didn't have time to construct this page but what I have in mind is to have a list t represent existing boats. Each boat list item will have a correcponding Delete Icon button to delet them. I would provide a confirmation box to avoid deleting things when users accidentally click delet button.
+2. Admin: This where operators can add/delete new boats. I didn't have time to construct this page but what I have in mind is to have a list t represent existing boats. Each boat list item will have a correcponding Delete Icon button to delet them. I would provide a confirmation box to avoid deleting things when users accidentally click delet button.
 
 I would also add an app bar/menu bar available to add boats.
              
