@@ -50,7 +50,7 @@ Didn't have time to handle errors either. What I would do is have show user frie
  
  What I would like to include is have env file for setting. At the moment, urls for the service are hard coded.
  
- # Deployment 
+ #  # CI/CD and Deployment 
  
  There isn't a live site deployed. 
  
