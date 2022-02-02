@@ -56,7 +56,7 @@ Didn't have time to handle errors either. What I would do is have show user frie
  
  # How to install and run
  
- run npm install
+     npm install
  
      npm start run
      
