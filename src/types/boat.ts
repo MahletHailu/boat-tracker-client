@@ -2,7 +2,7 @@
 import { BoatState } from './boatState';
 
 export type Boat = {
-  hid: string,
+  hin: string,
   name: string,
-  state: BoatState,
+  boatState: BoatState,
 }

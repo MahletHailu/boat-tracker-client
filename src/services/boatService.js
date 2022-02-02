@@ -11,7 +11,7 @@ class BoatService {
   async loadBoat(HIN) {
     try {
       const response = await this.api
-        .get(`https://fishfrytoursboattrackerservice.azurewebsites.net/api/boats/${HIN}`);
+        .get(`boats/${HIN}`);
       return response;
     } catch (error) {
         return undefined;
@@ -21,8 +21,23 @@ class BoatService {
   async loadBoats() {
     try {
       const response = await this.api
-      .get(
-        `https://fishfrytoursboattrackerservice.azurewebsites.net/api/boats`
+      .get(`boats/`);
+      return response || [];
+    } catch(error) {
+      if (error.response && error.response.status !== 404) {
+        // Handle Error here
+        return [];
+      }
+      return [];
+    }
+  }
+
+  async updateABoat(body) {
+    try {
+      const response = await this.api
+      .put(
+        `boats/`,
+        body
         );
       return response || [];
     } catch(error) {

@@ -13,16 +13,27 @@ const [boats, setBoats] = useState<Boat[]>([]);
       .then((boats) => {
         setBoats(boats);
         
-    boatService
-    .loadBoat('3124567890')
-    .then((boat) => {
-      console.log(boat);
-  });
     });
   }, []);
+  
+  const updateState = (boat:Boat) => {
+     boatService
+      .updateABoat(boat)
+      .then((result) => {
 
+        if(!result){
+          // Erro update the user that data is not updated successfully
+        }
+      console.log(boat);
+  });
+
+  }
+  
   return(
-  <BoatsList boats={boats}>
+  <BoatsList 
+  boats={boats}
+  updateState={updateState}
+  >
   </BoatsList>
   );  
 };

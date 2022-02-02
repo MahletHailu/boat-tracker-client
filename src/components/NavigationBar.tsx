@@ -11,7 +11,7 @@ import HumburgerMenu from "./HumburgerMenu";
 
 const NavigationBar = () => {
   const theme = useTheme();
-  //If screen size is less than
+  //If screen size is small
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (

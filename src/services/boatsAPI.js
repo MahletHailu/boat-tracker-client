@@ -2,11 +2,10 @@ import axios from 'axios';
 
 export class BoatsAPI {
   
-  async get(path) {
-    
+  async get(path) {    
       return axios({
         method: 'get',
-        url: path,
+        url: `https://fishfrytoursboattrackerservice.azurewebsites.net/api/${path}`,
         responseType: 'json'
       })
       .then(({ data }) => data)
@@ -18,14 +17,7 @@ export class BoatsAPI {
   async put(path, body) {
 
     return axios
-      .create({
-        baseURL: 'https://fishfrytoursboattrackerservice.azurewebsites.net/api/',
-        headers: {
-          'Content-Encoding': 'gzip, compress',
-          'content-type': `application/json;charset=UTF-8;`,
-        },
-      })
-      .put(path, body)
+      .put(`https://fishfrytoursboattrackerservice.azurewebsites.net/api/${path}`, body)
       .then(({ data }) => data)
       .catch(function (error) {
         console.log(error);
