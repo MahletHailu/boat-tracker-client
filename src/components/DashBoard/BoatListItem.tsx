@@ -51,7 +51,7 @@ const BoatListItem: React.FC<BoatListItemProps> = (
         sx={{
           borderRadius: '4px',
           margin: '20px',
-          padding: '15px 70px 100px 15px',
+          padding: '15px 70px 50px 15px',
           backgroundColor: theme.palette.grey[200],
         }}
         >
