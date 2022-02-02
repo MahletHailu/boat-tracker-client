@@ -50,7 +50,13 @@ Didn't have time to handle errors either. What I would do is have show user frie
  
  What I would like to include is have env file for setting. At the moment, urls for the service are hard coded.
  
+ #  # CI/CD and Deployment 
+ 
+ There isn't a live site deployed. 
+ 
  # How to install and run
  
  run npm install
      npm start run
+     
+     Note: You'd need to update your Node.js to the latest version. If there is a version miss match, you'll get a 'Html Webpack Plugin: Error: Child compilation failed'.
