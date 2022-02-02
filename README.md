@@ -60,4 +60,4 @@ Didn't have time to handle errors either. What I would do is have show user frie
  
      npm start run
      
- Note: You'd need to update your Node.js to the latest version. If there is a version miss match, you'll get a 'Html Webpack Plugin: Error: Child compilation failed'.
+ Note: You'd need to update your Node.js to the latest version. If there is a version miss match, you'll get an 'Html Webpack Plugin: Error: Child compilation failed'.
