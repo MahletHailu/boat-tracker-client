@@ -40,8 +40,17 @@ Didn't have time to handle errors either. What I would do is have show user frie
    3. Types: This is for types and interfaces
    4. Util: for utility functions
  
-   # Tools and technologies used
+ # Tools and technologies used
    
    Language: TypeScript (I picked this over JS because it provides type safety and allows you to program in a Object-Oriented prgramming way).
    IDE: Visual Studio Code
    UI Components: Material UI
+   
+ # Configuration 
+ 
+ What I would like to include is have env file for setting. At the moment, urls for the service are hard coded.
+ 
+ # How to install and run
+ 
+ run npm install
+     npm start run
