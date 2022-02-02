@@ -57,16 +57,16 @@ const BoatListItem: React.FC<BoatListItemProps> = (
         >
         <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
-        <Typography 
-          gutterBottom
-          sx={{
-            fontWeight: 'bold',           
-          }}
-        >
-          {isMobile? 
-         (`${boat.name}`)
-         :(`${boat.name} (${boat.hin})`)
-          }
+          <Typography 
+            gutterBottom
+            sx={{
+              fontWeight: 'bold',           
+            }}
+          >
+            {isMobile? 
+          (`${boat.name}`)
+          :(`${boat.name} (${boat.hin})`)
+            }
           </Typography>
         </Grid>
         <Grid item xs={12} md={8}>        
